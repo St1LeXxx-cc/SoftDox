@@ -1,13 +1,12 @@
 import os
 import subprocess
-import sys  # Необходимо для установки модулей через subprocess
+import sys
 
 def install_modules():
-    # Добавьте необходимые модули в этот список
     required_modules = ["termcolor", "faker", "requests", "pandas"]
     for module in required_modules:
         try:
-            __import__(module)  # Проверка: установлен ли модуль
+            __import__(module)
         except ImportError:
             print(f"\nМодуль '{module}' не установлен. Устанавливаю...")
             subprocess.check_call([sys.executable, "-m", "pip", "install", module])
@@ -43,12 +42,12 @@ def about_program():
     print("            Автор: Orionchik")
     print("            Канал: WsOrion")
     print("            Гит хаб: Скоро")
-    print("            Версия: платная(средняя)")
+    print("            Версия: Бесплатная (гит хаб)")
     print("=" * 54)
     input("\nНажмите Enter, чтобы вернуться в меню...")
 
 def main():
-    install_modules()  # Устанавливаем модули перед запуском меню
+    install_modules()
     while True:
         show_menu()
         choice = input("\n Выберите опцию: ")
