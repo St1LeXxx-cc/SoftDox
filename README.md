@@ -3,7 +3,7 @@
 
 # Инструкция 
 
-git clone https://github.com/St1LeXxx-cc/SoftDox.git
+git clone https://github.com/WsOrion/SoftDox.git
 
 cd SoftDox 
 
