@@ -4,7 +4,7 @@ import sys  # Необходимо для установки модулей че
 
 def install_modules():
     # Добавьте необходимые модули в этот список
-    required_modules = ["termcolor", "faker", "requests", "pygame", "pandas"]
+    required_modules = ["termcolor", "faker", "requests", "pandas"]
     for module in required_modules:
         try:
             __import__(module)  # Проверка: установлен ли модуль
