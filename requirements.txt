@@ -1,5 +1,4 @@
 termcolor
 faker
 requests
-pygame
 pandas
