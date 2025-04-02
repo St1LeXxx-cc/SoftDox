@@ -2,16 +2,6 @@ import os
 import subprocess
 import sys
 
-def install_modules():
-    required_modules = ["termcolor", "faker", "requests", "pandas"]
-    for module in required_modules:
-        try:
-            __import__(module)
-        except ImportError:
-            print(f"\nМодуль '{module}' не установлен. Устанавливаю...")
-            subprocess.check_call([sys.executable, "-m", "pip", "install", module])
-            print(f"Модуль '{module}' успешно установлен!")
-
 def clear_screen():
     os.system("cls" if os.name == "nt" else "clear")
 
